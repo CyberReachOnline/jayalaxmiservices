@@ -121,7 +121,7 @@
                     <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="service.html" class="nav-item nav-link">Services</a>
                     <a href="work.html" class="nav-item nav-link">Work</a>
-                    <a href="careerapplication.html" class="nav-item nav-link active">Career</a>
+                    <a href="careerapplication.html" class="nav-item nav-link active">Jobs</a>
                     <!-- <a href="guard.html" class="nav-item nav-link">Guards</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
@@ -164,15 +164,11 @@
                             <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
                             <p class="help-block text-danger"></p>
                         </div>
-                        <div class="control-group">
-                            <input type="text" class="form-control" id="post" name="post" placeholder="post" data-validation-required-message="enter a feild you are applyiing for" />
-                            <p class="help-block text-danger"></p>
-                        </div>
+                        <center>
                         <div>
-                            <button class="btn btn-primary" type="submit" id="sendMessageButton" onclick="sendWhatsAppMessage()">Send Message</button>
+                            <button class="btn btn-primary" type="submit" id="sendMessageButton" onclick="sendWhatsAppMessage()">Submit</button>
                         </div>
                         <br>
-                        <center>
                             <h6>please <span style="color: rgb(212, 21, 21);">Attach your RESUME</span> in Whatsapp after this page redirects</h6>
                         </center>
                     </form>
@@ -198,7 +194,7 @@
                         <a class="text-white mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
                         <a class="text-white mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About Us</a>
                         <a class="text-white mb-2" href="service.html"><i class="fa fa-angle-right mr-2"></i>Services</a>
-                        <a class="text-white mb-2" href="careerapplication.html"><i class="fa fa-angle-right mr-2"></i>Career</a>
+                        <a class="text-white mb-2" href="careerapplication.html"><i class="fa fa-angle-right mr-2"></i>Jobs</a>
                         <a class="text-white" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
                     </div>
                 </div>
@@ -208,7 +204,7 @@
                         <a class="text-white mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
                         <a class="text-white mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About Us</a>
                         <a class="text-white mb-2" href="service.html"><i class="fa fa-angle-right mr-2"></i>Services</a>
-                        <a class="text-white mb-2" href="careerapplication.html"><i class="fa fa-angle-right mr-2"></i>Career</a>
+                        <a class="text-white mb-2" href="careerapplication.html"><i class="fa fa-angle-right mr-2"></i>Jobs</a>
                         <a class="text-white" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
                     </div>
                 </div>
@@ -274,10 +270,10 @@
             var name = document.getElementById('name').value;
             var phone = document.getElementById('phone').value;
             var email = document.getElementById('email').value;
-            var post = document.getElementById('post').value;
+            // var post = document.getElementById('post').value;
             var whatsappNumber = '+919886645502'; // Replace with the actual WhatsApp number
             
-            var whatsappUrl = 'https://wa.me/' + whatsappNumber + '?text=' + encodeURIComponent('Name: ' + name + '\nNumber: ' + phone + '\nEmail: ' + email + '\nPost: ' + post );
+            var whatsappUrl = 'https://wa.me/' + whatsappNumber + '?text=' + encodeURIComponent('Name: ' + name + '\nNumber: ' + phone + '\nEmail: ' + email );
             
             window.open(whatsappUrl, '_blank').focus();
         }
